@@ -8,9 +8,15 @@ mysql-vagrant is a quick way to run mysql locally for development without an ssh
 
 ### Connect to mysql:
 
-- host: 33.33.33.1
+- host: 33.33.33.33
+- port: (from your host) 12233, or 3306 on the same guest private network
 - username: root
 - password: root
+
+And because I never like plugging in root into my app, there is an app user that has full privileges to the database app
+- database: app
+- username: app
+- password: app
 
 ### From sequel pro
 
